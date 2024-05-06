@@ -8,6 +8,7 @@ public class PlayerStats : MonoBehaviour
     public float speed = 6.0f;
     public float jumpPower = 15.0f;
     public int atkDamage;
+    public float atkRate = 4f; 
 
     private int _punchDamage = 4;
     private int _kickDamage = 10;

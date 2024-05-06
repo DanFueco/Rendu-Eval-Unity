@@ -56,7 +56,7 @@ public class PlayerBehavior : MonoBehaviour
         _rb.velocity = new Vector2(movement.x * _playerStats.speed, _rb.velocity.y);    
     }
 
-    private bool IsGrounded()
+    public bool IsGrounded()
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }

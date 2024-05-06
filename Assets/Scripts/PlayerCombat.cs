@@ -22,7 +22,7 @@ public class PlayerCombat : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.E)) {
             PunchAttack();
-        } else if(Input.GetKeyDown(KeyCode.R) && Input.GetKey(KeyCode.UpArrow)) {
+        } else if(Input.GetKeyDown(KeyCode.R) && Input.GetKey(KeyCode.UpArrow) && _playerBehavior.IsGrounded()) {
             JumpedAttack();
         } else if(Input.GetKeyDown(KeyCode.F)) {
             Ult();
